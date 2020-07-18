@@ -1,0 +1,95 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:scrollbars="none|horizontal">
+      <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="308.0dp"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Τηλέφωνο"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1" />
+            <EditText
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText1" />
+            <TextView
+                android:text="Όνομα"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2" />
+            <TextView
+                android:text="Τρόπος Πληρωμής"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton1"
+                android:textOff="Μετρητά"
+                android:textOn="Πιστωτική Κάρτα" />
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton2"
+                android:textOff="E-SHOP"
+                android:textOn="PLUS4U" />
+            <Button
+                android:text="Αποστολή"
+                android:layout_width="match_parent"
+                android:layout_height="47.0dp"
+                android:id="@+id/button1"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="@dimen/abc_dialog_padding_top_material" />
+            <Button
+                android:text="connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/connect"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            <Button
+                android:text="disconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/disconnect"
+                android:textStyle="italic" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:inputType="phone"
+                android:text="10.2.24.16" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
